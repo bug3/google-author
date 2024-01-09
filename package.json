@@ -1,0 +1,29 @@
+{
+  "name": "google-auth-secrets",
+  "version": "1.0.0",
+  "description": "Google Authenticator Secret Keys",
+  "author": "bug3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bug3/google-auth-secrets/issues"
+  },
+  "homepage": "https://github.com/bug3/google-auth-secrets#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bug3/google-auth-secrets.git"
+  },
+  "keywords": [
+    "google",
+    "authenticator",
+    "secret",
+    "keys",
+    "otp",
+    "auth",
+    "migration",
+    "qr"
+  ]
+}
