@@ -31,5 +31,8 @@
     "auth",
     "migration",
     "qr"
+  ],
+  "files": [
+    "migration_data.proto"
   ]
 }
