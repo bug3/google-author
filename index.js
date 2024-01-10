@@ -1,10 +1,7 @@
 const decodeMigrationURI = require('./src/decodeMigrationURI');
 const syncPromise = require('synchronized-promise');
 
-const uri = 'otpauth-migration://offline?data=';
+const decodeMigrationURISync = (migrationURI) => syncPromise(decodeMigrationURI)(migrationURI);
 
-decodeMigrationURI(uri)
-    .then((data) => console.log(data))
-    .catch((error) => console.log(error));
-
-console.log(syncPromise(decodeMigrationURI)(uri));
+module.exports.decodeMigrationURI = decodeMigrationURI;
+module.exports.decodeMigrationURISync = decodeMigrationURISync;
