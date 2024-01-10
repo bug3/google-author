@@ -17,7 +17,9 @@
     "url": "git+https://github.com/bug3/google-auth-secrets.git"
   },
   "dependencies": {
+    "jimp": "^0.22.10",
     "protobufjs": "^7.2.5",
+    "qrcode-reader": "^1.0.4",
     "synchronized-promise": "^0.3.1"
   },
   "keywords": [
