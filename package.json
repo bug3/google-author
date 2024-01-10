@@ -33,6 +33,7 @@
     "qr"
   ],
   "files": [
+    "/src",
     "migration_data.proto"
   ]
 }
