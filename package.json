@@ -1,20 +1,20 @@
 {
-  "name": "google-auth-secrets",
+  "name": "google-author",
   "version": "1.0.0",
   "description": "Google Authenticator Secret Keys",
   "author": "bug3",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bug3/google-auth-secrets/issues"
+    "url": "https://github.com/bug3/google-author/issues"
   },
-  "homepage": "https://github.com/bug3/google-auth-secrets#readme",
+  "homepage": "https://github.com/bug3/google-author#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bug3/google-auth-secrets.git"
+    "url": "git+https://github.com/bug3/google-author.git"
   },
   "dependencies": {
     "jimp": "^0.22.10",

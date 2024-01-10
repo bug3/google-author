@@ -1,11 +1,11 @@
-# [google-auth-secrets](https://github.com/bug3/google-auth-secrets)
+# [google-author](https://github.com/bug3/google-author)
 
 A tool to obtain secret keys from Google Authenticator.
 
 ## Installation
 
 ```bash
-npm install google-auth-secrets
+npm install google-author
 ```
 
 ## Usage
@@ -15,11 +15,11 @@ npm install google-auth-secrets
 Google Authenticator App > Transfer accounts > Export accounts > Take screenshot and save file image
 
 ```javascript
-const googleAuthSecrets = require('google-auth-secrets');
+const googleAuthor = require('google-author');
 
 const qrCodeImageFile = 'qrCode.jpg';
 
-googleAuthSecrets.convertQRCode(qrCodeImageFile).then((migrationURI) => {
+googleAuthor.convertQRCode(qrCodeImageFile).then((migrationURI) => {
     console.log(migrationURI); // otpauth-migration://offline?data=data
 }).catch((error) => {
     console.error(error);
@@ -28,21 +28,21 @@ googleAuthSecrets.convertQRCode(qrCodeImageFile).then((migrationURI) => {
 OR
 
 ```javascript
-const googleAuthSecrets = require('google-auth-secrets');
+const googleAuthor = require('google-author');
 
 const qrCodeImageFile = 'qrCode.jpg';
 
-console.log(googleAuthSecrets.convertQRCodeSync(qrCodeImageFile)); // otpauth-migration://offline?data=data
+console.log(googleAuthor.convertQRCodeSync(qrCodeImageFile)); // otpauth-migration://offline?data=data
 ```
 
 -   **Get secret data**:
 
 ```javascript
-const googleAuthSecrets = require('google-auth-secrets');
+const googleAuthor = require('google-author');
 
 const migrationURI = 'otpauth-migration://offline?data=data';
 
-googleAuthSecrets.decodeMigrationURI(migrationURI).then((data) => {
+googleAuthor.decodeMigrationURI(migrationURI).then((data) => {
     console.log(data);
     /*
     [
@@ -65,11 +65,11 @@ googleAuthSecrets.decodeMigrationURI(migrationURI).then((data) => {
 OR
 
 ```javascript
-const googleAuthSecrets = require('google-auth-secrets');
+const googleAuthor = require('google-author');
 
 const migrationURI = 'otpauth-migration://offline?data=data';
 
-console.log(googleAuthSecrets.decodeMigrationURISync(migrationURI));
+console.log(googleAuthor.decodeMigrationURISync(migrationURI));
 /*
 [
     {
