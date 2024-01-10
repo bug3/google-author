@@ -1,6 +1,6 @@
 const protobuf = require('protobufjs');
 
-const protoFile = 'migration_data.proto';
+const protoFile = `${ __dirname }/../migration_data.proto`;
 
 module.exports = async (uri) => await new Promise((resolve, reject) => {
     protobuf.load(protoFile, (loadError, root) => {
