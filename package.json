@@ -17,6 +17,7 @@
     "url": "git+https://github.com/bug3/google-author.git"
   },
   "dependencies": {
+    "base32.js": "^0.1.0",
     "jimp": "^0.22.10",
     "protobufjs": "^7.2.5",
     "qrcode-reader": "^1.0.4",
