@@ -52,7 +52,8 @@ googleAuthor.decodeMigrationURI(migrationURI).then((data) => {
             issuer: 'bug3',
             hash: 'SHA1',
             digits: 'SIX',
-            type: 'TOTP'
+            type: 'TOTP',
+            sharedSecret: 'SECRET'
         },
         ...
     ]
@@ -78,7 +79,8 @@ console.log(googleAuthor.decodeMigrationURISync(migrationURI));
         issuer: 'bug3',
         hash: 'SHA1',
         digits: 'SIX',
-        type: 'TOTP'
+        type: 'TOTP',
+        sharedSecret: 'SECRET'
     },
     ...
 ]
