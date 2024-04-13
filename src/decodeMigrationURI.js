@@ -1,4 +1,5 @@
 const protobuf = require('protobufjs');
+const base32 = require('base32.js');
 
 const protoFile = `${ __dirname }/../migration_data.proto`;
 
@@ -28,7 +29,12 @@ module.exports = async (uri) => await new Promise((resolve, reject) => {
                 bytes: String
             });
 
-            resolve(messageObject.otpParams);
+            resolve(
+                messageObject.otpParams.map((item) => ({
+                    ...item,
+                    sharedSecret: new base32.Encoder().write(Buffer.from(item.secret, 'base64')).finalize()
+                }))
+            );
         } catch (error) {
             reject(error);
         }
